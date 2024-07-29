@@ -43,18 +43,12 @@ function addNumber(num){
 	return new Promise(res=>{
 		setTimeout(()=>{
 			let ans=num+10;
-			output.textContent=`Result:${ans}`;
+			output.textContent=`Final Result:${num}`;
 			res(ans);
 		},1000);
 	})
 }
 
-function finNumber(num){
-	return new Promise(res=>{
-			output.textContent=`Final Result:${num}`;
-		res(ans);
-	})
-}
 function errorMsg(err){
 			output.textContent=`Error: ${error.message}`;
 }
@@ -64,6 +58,5 @@ getNumber()
 .then(subNumber)
 .then(divNumber)	
 .then(addNumber)
-.then(finNumber)
 .catch(errorMsg)
 })
