@@ -43,7 +43,7 @@ function addNumber(num){
 	return new Promise(res=>{
 		setTimeout(()=>{
 			let ans=num+10;
-			output.textContent=`Final Result:${res}`;
+			output.textContent=`Final Result:${ans}`;
 			res(ans);
 		},1000);
 	})
